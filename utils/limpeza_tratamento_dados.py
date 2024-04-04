@@ -20,7 +20,7 @@ def import_limpeza_trat_dados():
         Output.: DataFrame
     '''
 
-    dados_principal = pd.read_csv('dataset\zomato.csv')
+    dados_principal = pd.read_csv('dataset/zomato.csv')
     dados = dados_principal.copy()
 
     #Renomear Colunas
