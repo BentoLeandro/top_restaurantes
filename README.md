@@ -32,5 +32,4 @@ ele precisa que seja feita uma análise nos dados da empresa e que sejam gerados
 3. Top 10 Melhores Tipos de Culinárias.
 4. Top 10 Piores Tipos de Culinárias
 
-O objetivo desse projeto é criar um conjunto de gráficos e/ou tabelas
-que exibam essas métricas da melhor forma possível para o CEO.
+O objetivo desse projeto é criar um conjunto de gráficos e tabelas que exibam essas métricas da melhor forma possível para o CEO.
