@@ -4,6 +4,8 @@ A base de dados utilizada é do site Kaggle.
 
 https://www.kaggle.com/datasets/akashram/zomato-restaurants-autoupdated-dataset?resource=download&select=zomato.csv
 
+Painel está online, hospedado no Streamlit Cloud e pode ser acessado através desse link: https://bentoleandro-toprestaurantes.streamlit.app/
+
 # 1. Problema de negócio
 A empresa Top Restaurantes é uma marketplace de restaurantes. Ou seja, seu core business é facilitar o encontro e negociações de clientes e restaurantes. Os
 restaurantes fazem o cadastro dentro da plataforma da Top Restaurantes, que disponibiliza informações como endereço, tipo de culinária servida, 
@@ -38,10 +40,6 @@ que exibam essas métricas da melhor forma possível para o CEO.
 1. A sazonalidade da quantidade de pedidos é diária. Há uma variação de aproximadamente 10% do número de pedidos em dia sequenciais.
 2. As cidades do tipo Semi-Urban não possuem condições baixas de trânsito.
 3. As maiores variações no tempo de entrega, acontecem durante o clima ensolado.
-
-# 5. O produto final do projeto
-Painel online, hospedado no Streamlit Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
-O painel pode ser acessado através desse link: https://bentoleandro-toprestaurantes.streamlit.app/
 
 # 7. Próximo passos
 1. Reduzir o número de métricas.
