@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from PIL import Image
 from st_pages import Page, show_pages, add_page_title, Section, add_indentation
 
@@ -80,13 +81,18 @@ def carrega_barra_lateral(dados, pmostra_filtro_paises, pmostra_filtro_restauran
              default=default_culinaria,
              key='filtro_culinaria'   
         )    
-        
-    #somente da pagina principal
-    if pmostra_download:
-        st.sidebar.markdown('### Dados Tratados')
-        st.sidebar.markdown('###### Add Botão para download')
 
-    
+    st.sidebar.markdown('___')    
+    #somente da pagina principal
+    if pmostra_download:               
+        st.sidebar.markdown('### Dados Tratados')
+        st.sidebar.download_button(
+            label='Download',
+            data=dados.to_csv(index=False, sep=';'),
+            file_name='dados_processados.csv',
+            mime='text/csv'    
+        )
+          
     if pmostra_filtro_paises:
         indices_selecionados = dados['country_name'].isin(filtro_paises)                                
         dados = dados.loc[indices_selecionados, :]
